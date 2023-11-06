@@ -1,0 +1,328 @@
+@font-face{
+  font-family: 'Lora';
+  src: url('/font/Lora-Bold.ttf') ;
+}
+@font-face{
+  font-family: 'Sora';
+  src: url('/font/Sora-Regular.ttf') ;
+}
+@font-face{
+  font-family: 'Sora-Bold';
+  src: url('/font/Sora-Bold.ttf') ;
+}
+@font-face{
+  font-family: 'Sora-SemiBold';
+  src: url('/font/Sora-SemiBold.ttf') ;
+}
+@font-face{
+  font-family: 'Sora-Light';
+  src: url('/font/Sora-Light.ttf') ;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color:"#ebffff";
+}
+
+h2{
+  font-family: 'Lora';
+}
+p{
+  font-family: 'Sora';
+}
+h1{
+  font-family: 'Sora-Bold';
+}
+.sora-semibold{
+  font-family: 'Sora-SemiBold';
+}
+.sora-light{
+  font-family: 'Sora-Light';
+}
+
+.btnT {
+  background-color: #6700a7;
+  color: white;
+  animation: changeColor 2.5s forwards;  /* Começa escondido */
+}
+.fadeIn {
+  animation-name: fadeInOpacity;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  from {
+      background-color: white;
+  }
+  to {
+      background-color: #6700a7;
+  }
+}
+#wifi-loader {
+  --background: #62abff;
+  --front-color: #4f29f0;
+  --back-color: #c3c8de;
+  --text-color: #414856;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wifi-loader svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wifi-loader svg circle {
+  position: absolute;
+  fill: none;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: rotate(-100deg);
+  transform-origin: center;
+}
+
+#wifi-loader svg circle.back {
+  stroke: var(--back-color);
+}
+
+#wifi-loader svg circle.front {
+  stroke: #2BB4C7;
+}
+
+#wifi-loader svg.circle-outer {
+  height: 86px;
+  width: 86px;
+}
+
+#wifi-loader svg.circle-outer circle {
+  stroke-dasharray: 62.75 188.25;
+}
+
+#wifi-loader svg.circle-outer circle.back {
+  animation: circle-outer135 1.8s ease infinite 0.3s;
+}
+
+#wifi-loader svg.circle-outer circle.front {
+  animation: circle-outer135 1.8s ease infinite 0.15s;
+}
+
+#wifi-loader svg.circle-middle {
+  height: 60px;
+  width: 60px;
+}
+
+#wifi-loader svg.circle-middle circle {
+  stroke-dasharray: 42.5 127.5;
+}
+
+#wifi-loader svg.circle-middle circle.back {
+  animation: circle-middle6123 1.8s ease infinite 0.25s;
+}
+
+#wifi-loader svg.circle-middle circle.front {
+  animation: circle-middle6123 1.8s ease infinite 0.1s;
+}
+
+#wifi-loader svg.circle-inner {
+  height: 34px;
+  width: 34px;
+}
+
+#wifi-loader svg.circle-inner circle {
+  stroke-dasharray: 22 66;
+}
+
+#wifi-loader svg.circle-inner circle.back {
+  animation: circle-inner162 1.8s ease infinite 0.2s;
+}
+
+#wifi-loader svg.circle-inner circle.front {
+  animation: circle-inner162 1.8s ease infinite 0.05s;
+}
+
+#wifi-loader .text {
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+#wifi-loader .text::before, #wifi-loader .text::after {
+  content: attr(data-text);
+}
+
+#wifi-loader .text::before {
+  color: var(--text-color);
+}
+
+#wifi-loader .text::after {
+  color:#2BB4C7;
+  animation: text-animation76 3.6s ease infinite;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes circle-outer135 {
+  0% {
+    stroke-dashoffset: 25;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 301;
+  }
+
+  80% {
+    stroke-dashoffset: 276;
+  }
+
+  100% {
+    stroke-dashoffset: 276;
+  }
+}
+
+@keyframes circle-middle6123 {
+  0% {
+    stroke-dashoffset: 17;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 204;
+  }
+
+  80% {
+    stroke-dashoffset: 187;
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+  }
+}
+
+@keyframes circle-inner162 {
+  0% {
+    stroke-dashoffset: 9;
+  }
+
+  25% {
+    stroke-dashoffset: 0;
+  }
+
+  65% {
+    stroke-dashoffset: 106;
+  }
+
+  80% {
+    stroke-dashoffset: 97;
+  }
+
+  100% {
+    stroke-dashoffset: 97;
+  }
+}
+
+@keyframes text-animation76 {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  50% {
+    clip-path: inset(0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+ .appear{
+  animation: slide-down 2s ease-in-out forwards;
+ }
+ 
+ @keyframes slide-down {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes rotate{
+  0% {
+    transform:rotateZ(-90deg);
+  }
+  100% {
+    transform:rotateZ(90deg);
+  }
+}
+
+/* radio button inpiut  */
+/* Arquivo CSS (por exemplo, styles.css) */
+
+/* Estilize o rótulo que contém o input do tipo radio */
+.label-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Esconda o input do tipo radio padrão */
+.input-radio {
+  display: none;
+}
+
+/* Estilize a aparência do input do tipo radio personalizado */
+.input-radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Ajuste o tamanho desejado */
+  height: 20px; /* Ajuste o tamanho desejado */
+  background-color: lightblue; /* Cor de fundo desejada */
+  border-radius: 4px; /* Borda arredondada */
+  cursor: pointer;
+}
+
+/* Estilize a aparência do input do tipo radio quando estiver marcado */
+.input-radio:checked + label::before {
+  content: "✔"; /* Inserir um "✔" quando estiver marcado */
+  background-color: #6700a7; /* Cor de fundo quando marcado */
+  color: #fff; /* Cor do marcador de confirmação */
+  border: none; /* Remova a borda quando marcado */
+  border-radius: 4px; /* Borda arredondada */
+  text-align: center; /* Centralize o marcador de confirmação horizontalmente */
+  line-height: 20px; /* Centralize o marcador de confirmação verticalmente */
+  font-size: 13px; /* Borda arredondada */
+}

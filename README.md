@@ -9,9 +9,14 @@
 ### Note: I have this project already finished and refactored, but I am making this version available just for people to practice.
 #### LET'S CODE!!"
 
-> Esse projeto foi desenvolvido com o objetivo de aprendizado*
-> Não me responsabilizo pelo uso indevido desse material!
-> Material educativo!
+### nota
+- Esse projeto foi desenvolvido com o objetivo de aprendizado*
+- Não me responsabilizo pelo uso indevido desse material!
+- Material educativo!
+### note
+- This project was developed for learning purposes*
+- I am not responsible for the misuse of this material!
+- Educational material!
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

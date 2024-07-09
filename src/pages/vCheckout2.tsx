@@ -20,17 +20,7 @@ export default function Checkout() {
     <>
       {show && (
         <>
-          <header className="hidden lg:block">
-            <div className="flex">
-              <h1
-                style={{ textShadow: "2px 2px #000" }}
-                className="font-black text-[#fff] text-center text-[150px]"
-              >
-                403 <br /> only available in mobile device
-              </h1>
-            </div>
-          </header>
-          <main className="lg:hidden block">
+          <main className="">
             <nav className="flex justify-between px-[12px] bg-[#ffffff] items-center mb-[12px] fixed top-0 left-0 w-full shadow-md z-50">
               <div className="flex justify-center max-w-[100px] items-center py-2">
                 <img
@@ -289,10 +279,7 @@ export default function Checkout() {
                     </p>
                   </div>
                   <div className="w-full flex  md:justify-center relative">
-                    <a
-                      className="w-full flex justify-center"
-                      href="https://pay.hotmart.com/T88050307T?off=ocrhieqp&checkoutMode=10"
-                    >
+                    <a className="w-full flex justify-center">
                       <button className="font-[600] mt-[12px] bg-[#ec7e00] text-white  text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                         12,90 Promoción limitada
                       </button>
@@ -323,10 +310,7 @@ export default function Checkout() {
                     </p>
                   </div>
                   <div className="w-full flex relative md:justify-center">
-                    <a
-                      href="https://pay.hotmart.com/T88050307T?off=8dnp3ns3&checkoutMode=10"
-                      className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] "
-                    >
+                    <a className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                       Ahorra $10,90 Ahorra
                     </a>
                   </div>
@@ -350,10 +334,7 @@ export default function Checkout() {
                     </p>
                   </div>
                   <div className="w-full flex relative md:justify-center">
-                    <a
-                      href="https://pay.hotmart.com/T88050307T?off=8gy5dlo5"
-                      className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] "
-                    >
+                    <a className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                       Ahorra $9.90 Ahorra
                     </a>
                   </div>
@@ -631,10 +612,7 @@ export default function Checkout() {
                   </p>
                 </div>
                 <div className="w-full flex  md:justify-center relative">
-                  <a
-                    className="w-full flex justify-center"
-                    href="https://pay.hotmart.com/T88050307T?off=ocrhieqp&checkoutMode=10"
-                  >
+                  <a className="w-full flex justify-center">
                     <button className="font-[600] mt-[12px] bg-[#ec7e00] text-white  text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                       12,90 Promoción limitada
                     </button>
@@ -665,10 +643,7 @@ export default function Checkout() {
                   </p>
                 </div>
                 <div className="w-full flex relative md:justify-center">
-                  <a
-                    href="https://pay.hotmart.com/T88050307T?off=8dnp3ns3&checkoutMode=10"
-                    className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] "
-                  >
+                  <a className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                     Ahorra $10,90 Ahorra
                   </a>
                 </div>
@@ -692,10 +667,7 @@ export default function Checkout() {
                   </p>
                 </div>
                 <div className="w-full flex relative md:justify-center">
-                  <a
-                    href="https://pay.hotmart.com/T88050307T?off=8gy5dlo5"
-                    className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] "
-                  >
+                  <a className="font-[600] mt-[12px] bg-[#ec7e00] text-white text-center w-full md:max-w-[450px] rounded-[36px] py-[5px] ">
                     Ahorra $9.90 Ahorra
                   </a>
                 </div>

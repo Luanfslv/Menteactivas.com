@@ -27,17 +27,7 @@ export default function Q4() {
     <>
       {show && (
         <>
-          <header className="lg:block hidden">
-            <div className="flex">
-              <h1
-                style={{ textShadow: "2px 2px #000" }}
-                className="font-black text-[#fff] text-center text-[150px]"
-              >
-                403 <br /> only available in mobile device
-              </h1>
-            </div>
-          </header>
-          <main className="bg-[#fff] fadeIn lg:hidden block">
+          <main className="bg-[#fff] fadeIn">
             <nav className="flex justify-between px-[12px] bg-[#ffffff] items-center mb-[12px] fixed top-0 left-0 w-full shadow-md z-50">
               <div className="flex justify-center max-w-[100px] items-center py-2">
                 <img

@@ -1,3 +1,8 @@
+# Esse projeto precisa da sua contribuição!
+## Projeto não refatorado, não otimizado!
+### Obs.: tenho esse projeto já feito até o fim e refatorado, mas estou disponibilizando essa versão só pra pessoas treinarem.
+#### VAMO CODAR!!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

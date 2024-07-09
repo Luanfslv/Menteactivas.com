@@ -3,6 +3,12 @@
 ### Obs.: tenho esse projeto já feito até o fim e refatorado, mas estou disponibilizando essa versão só pra pessoas treinarem.
 #### VAMO CODAR!!
 
+
+# This project needs your contribution!
+## Project not refactored, not optimized!
+### Note: I have this project already finished and refactored, but I am making this version available just for people to practice.
+#### LET'S CODE!!"
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
